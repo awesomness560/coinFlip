@@ -1,0 +1,387 @@
+[gd_scene load_steps=8 format=3 uid="uid://bre8pbubip4a2"]
+
+[ext_resource type="Texture2D" uid="uid://dhgfe60c5o1h1" path="res://assets/heads.png" id="1_8uqwf"]
+[ext_resource type="Script" path="res://coin_flip.gd" id="1_bdgds"]
+[ext_resource type="Texture2D" uid="uid://7660ohosgpa7" path="res://assets/tails.png" id="2_51hj0"]
+
+[sub_resource type="Animation" id="Animation_ica32"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Heads:skew")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Heads:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Tails:skew")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Tails:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Heads:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.686667, 0.686667)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Tails:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.693334, 0.693334)]
+}
+
+[sub_resource type="Animation" id="Animation_fjivb"]
+resource_name = "coin_flip"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Heads:skew")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 1.56905, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Heads:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Tails:skew")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.56905, 1.56905, 0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Tails:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_eyctd"]
+resource_name = "coin_flip_2"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Heads:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.686667, 0.686667), Vector2(1e-05, 0.687), Vector2(1e-05, 0.687), Vector2(0.686667, 0.686667)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Heads:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Tails:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1e-05, 0.693), Vector2(1.00136e-05, 0.693), Vector2(0.693, 0.693), Vector2(1.00136e-05, 0.693)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Tails:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x5ky1"]
+_data = {
+"RESET": SubResource("Animation_ica32"),
+"coin_flip": SubResource("Animation_fjivb"),
+"coin_flip_2": SubResource("Animation_eyctd")
+}
+
+[node name="CoinFlip" type="Node2D" node_paths=PackedStringArray("headsSprite", "tailsSprite", "coinAnimations", "spinButton", "resultLabel", "headTailsMenu", "usernameTextEdit", "thanksMenu")]
+script = ExtResource("1_bdgds")
+headsResult = "[b]Result:[/b]
+Heads"
+tailsResult = "[b]Result:[/b]
+Tails"
+headsSprite = NodePath("Heads")
+tailsSprite = NodePath("Tails")
+coinAnimations = NodePath("CoinAnimation")
+spinButton = NodePath("CanvasLayer/Spin")
+resultLabel = NodePath("CanvasLayer/ResultLabel")
+headTailsMenu = NodePath("CanvasLayer/HeadsOrTails")
+usernameTextEdit = NodePath("CanvasLayer/Username")
+thanksMenu = NodePath("CanvasLayer/ThanksMenu")
+
+[node name="Heads" type="Sprite2D" parent="."]
+position = Vector2(568, 103)
+scale = Vector2(0.686667, 0.686667)
+texture = ExtResource("1_8uqwf")
+
+[node name="CoinAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_x5ky1")
+}
+speed_scale = 2.0
+
+[node name="Tails" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(568, 103)
+scale = Vector2(0.693334, 0.693334)
+texture = ExtResource("2_51hj0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Spin" type="Button" parent="CanvasLayer"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -15.5
+offset_right = 21.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Spin"
+
+[node name="ResultLabel" type="RichTextLabel" parent="CanvasLayer"]
+visible = false
+offset_left = 262.0
+offset_top = 57.0
+offset_right = 386.0
+offset_bottom = 161.0
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+bbcode_enabled = true
+text = "[b]Result:[/b]"
+fit_content = true
+
+[node name="HeadsOrTails" type="Control" parent="CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Heads" type="Button" parent="CanvasLayer/HeadsOrTails"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -233.0
+offset_top = 22.0
+offset_right = -134.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Heads"
+
+[node name="Tails" type="Button" parent="CanvasLayer/HeadsOrTails"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 132.0
+offset_top = 22.0
+offset_right = 231.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Tails"
+
+[node name="QuestionLabel" type="RichTextLabel" parent="CanvasLayer/HeadsOrTails"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -202.0
+offset_top = -70.0
+offset_right = 202.0
+offset_bottom = -28.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+bbcode_enabled = true
+text = "What Will The Next One Be?"
+fit_content = true
+
+[node name="Username" type="LineEdit" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -26.0
+offset_right = 150.0
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+placeholder_text = "Enter Name"
+alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/Username"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 79.0
+offset_right = 195.0
+offset_bottom = 129.0
+theme_override_font_sizes/font_size = 30
+text = "Submit"
+
+[node name="ThanksMenu" type="Control" parent="CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ThanksLabel" type="RichTextLabel" parent="CanvasLayer/ThanksMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.0
+offset_top = -20.0
+offset_right = 156.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 30
+text = "Thanks for your time!"
+fit_content = true
+
+[node name="TryAgain" type="Button" parent="CanvasLayer/ThanksMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -71.5
+offset_top = 59.0
+offset_right = 71.5
+offset_bottom = 109.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Try Again"
+
+[connection signal="pressed" from="CanvasLayer/Spin" to="." method="_on_spin_pressed"]
+[connection signal="pressed" from="CanvasLayer/HeadsOrTails/Heads" to="." method="_on_heads_pressed"]
+[connection signal="pressed" from="CanvasLayer/HeadsOrTails/Tails" to="." method="_on_tails_pressed"]
+[connection signal="pressed" from="CanvasLayer/Username/Button" to="." method="coinFlipInput"]
+[connection signal="pressed" from="CanvasLayer/ThanksMenu/TryAgain" to="." method="_on_try_again_pressed"]
